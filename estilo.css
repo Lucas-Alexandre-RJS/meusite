@@ -1,24 +1,19 @@
-/* Configurações Gerais */
+ {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #f2f2f2;
+    color: #222;
 }
 
-/* Cabeçalho */
 header {
     background-color: #0b5394;
     color: white;
     text-align: center;
-    padding: 20px;
-}
-
-/* Seu estilo personalizado para o H1 */
-h1 {
-    color: white;
-    text-transform: uppercase;
+    padding: 30px 20px;
 }
 
 header img {
@@ -28,11 +23,18 @@ header img {
     object-fit: cover;
 }
 
-/* Navegação / Menu */
+header h1 {
+    margin: 15px 0 5px;
+}
+
+header p {
+    margin: 5px;
+}
+
 nav {
-    background-color: #222;
+    background-color: #073763;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 nav a {
@@ -46,27 +48,42 @@ nav a:hover {
     color: yellow;
 }
 
-/* Conteúdo Principal */
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
 section {
-    margin-bottom: 30px;
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-/* Tabela */
+h2 {
+    color: #0b5394;
+}
+
+h3 {
+    color: #073763;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 10px;
     text-align: left;
 }
 
@@ -75,36 +92,42 @@ th {
     color: white;
 }
 
-/* Formulário de Contato */
-form label {
-    display: block;
-    margin-top: 10px;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    box-sizing: border-box;
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 button {
-    margin-top: 10px;
-    padding: 10px 15px;
+    margin-top: 15px;
+    padding: 10px;
     background-color: #0b5394;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #083c6c;
+    background-color: #073763;
 }
 
-/* Rodapé */
 footer {
+    background-color: #0b5394;
+    color: white;
     text-align: center;
     padding: 15px;
-    background-color: #222;
-    color: white;
 }
